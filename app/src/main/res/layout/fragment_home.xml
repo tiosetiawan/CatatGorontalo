@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/belum"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+         >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menuback">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Belum Di Proses"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/buttonmenu"
+                    android:layout_marginTop="60dp"/>
+
+                <TextView
+                    android:id="@+id/jumlahbelum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="105dp"
+                    android:text="Jumlah Laporan" />
+
+
+                <!--  <TextView
+                      android:id="@+id/jum"
+                      android:layout_width="200dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="60dp"
+                      android:layout_marginTop="25dp"
+                      android:drawableLeft="@drawable/ic_assignment"
+                      android:drawablePadding="6dp"
+                      android:text="JUMLAH"
+                      android:textColor="@color/colorAccent"
+                      android:textSize="20dp"
+                      android:textStyle="bold" />
+
+                  <TextView
+                      android:id="@+id/jumlahbelum"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="105dp"
+                      android:layout_marginTop="50dp"
+                      android:text="1"
+                      android:textColor="@android:color/black"
+                      android:textSize="45dp" />
+
+                  <TextView
+                      android:layout_width="100dp"
+                      android:layout_height="30dp"
+                      android:layout_gravity="bottom"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="70dp"
+                      android:gravity="center"
+                      android:background="@drawable/statusb"
+                      android:text="Belum DIProses"
+                      android:textColor="@android:color/white"
+                      android:textSize="10dp" />
+
+                  <ImageView
+                      android:layout_width="wrap_content"
+                      android:layout_marginLeft="200dp"
+                      android:paddingLeft="10dp"
+                      android:layout_height="142dp"
+                      android:layout_gravity="right"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginRight="40dp"
+                      android:layout_marginTop="10dp"
+                      android:src="@drawable/belum" />-->
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sedang"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menuback">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Sedang Di Proses"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/buttonmenu"
+                    android:layout_marginTop="60dp"/>
+
+                <TextView
+                    android:id="@+id/jumlahsedang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="105dp"
+                    android:text="Jumlah Laporan" />
+
+               <!-- <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="25dp"
+                    android:drawableLeft="@drawable/ic_assignment"
+                    android:drawablePadding="6dp"
+                    android:text="JUMLAH"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jumlahsedang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="50dp"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/statusp"
+                    android:text="Sedang DIProses"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="142dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/sedang" />-->
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/selesai"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+           >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/menuback">
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Selesai Di Proses"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/buttonmenu"
+                    android:layout_marginTop="60dp"/>
+
+                <TextView
+                    android:id="@+id/jumlahselesai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="105dp"
+                    android:text="Jumlah Laporan" />
+
+             <!--   <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="25dp"
+                    android:drawableLeft="@drawable/ic_assignment"
+                    android:drawablePadding="6dp"
+                    android:text="JUMLAH"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/jumlahselesai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="105dp"
+                    android:layout_marginTop="50dp"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="45dp" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/statuss"
+                    android:text="Seleai DIProses"
+                    android:textColor="@android:color/white"
+                    android:textSize="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="200dp"
+                    android:paddingLeft="10dp"
+                    android:layout_height="142dp"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/selesai" />-->
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
